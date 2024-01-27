@@ -154,7 +154,7 @@ export function GithubLogo() {
 }
 export function Badge() {
     return (
-        <svg className="mx-[auto]" xmlns="http://www.w3.org/2000/svg" width="205.4" height="205.533" viewBox="-10 0 1177.735 734.815">
+        <svg className="mx-[auto]" xmlns="http://www.w3.org/2000/svg" width="100" height="auto" viewBox="-10 0 1177.735 734.815">
             <g id="Group_30" data-name="Group 30" transform="translate(0.002 0.005)">
                 <path fill="none" stroke="var(--foreground)" strokeWidth="12" id="Path_54" data-name="Path 54" d="M1489.82,869,1210.54,972.28,989.35,1054l-64.12,23.71a14.31,14.31,0,0,1-9.91,0L851.2,1054,630,972.28l-25.44-9.4L908.31,850.56a19.56,19.56,0,0,0-6.79-37.9,19.2,19.2,0,0,0-6.78,1.21l-327,120.87a19.71,19.71,0,0,0-11.09,10.43L350.73,869c-12.43-4.6-12.43-22.21,0-26.81L915.32,633.48a14.31,14.31,0,0,1,9.91,0l564.59,208.73C1502.25,846.81,1502.25,864.42,1489.82,869Z" transform="translate(-341.41 -632.6)" />
                 <path fill="none" stroke="var(--foreground)" strokeWidth="12" id="Path_55" data-name="Path 55" d="M1210.54,1107.73V1117c0,35.78-290.26,113.69-290.26,113.69S630,1152.77,630,1117V989.63l181.85,67.22L909.68,1093a30.22,30.22,0,0,0,21.2,0l97.81-36.17,181.85-67.22Z" transform="translate(-341.41 -632.6)" />

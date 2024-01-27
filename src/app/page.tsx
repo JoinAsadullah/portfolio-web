@@ -2,7 +2,7 @@
 import ThemeBtn from './components/theme-btn.tsx'
 //import Loader from './components/loader.tsx'
 import CopyButton from './components/copyButton.tsx'
-import { DevxioLogo, FbLogo,LinkedinLogo, GmailLogo, WhatsappLogo, GithubLogo } from './svgs.tsx'
+import { DevxioLogo, FbLogo,LinkedinLogo, GmailLogo, WhatsappLogo, GithubLogo, Badge } from './svgs.tsx'
 import { useEffect, useState } from 'react';
 import Image from 'next/image'
 
@@ -245,6 +245,98 @@ export default function Home() {
                 </ul>
               ))}
             </div>
+        </div>
+        <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
+          <h3 className='font-semibold text-center text-[18px] mb-4'>
+            Education
+          </h3>
+            <div className=' flex flex-wrap mk-shadow1 rounded-xl p-3 md:px-5 md:py-5 mb-3'>
+            <div className='mb-6 mt-4'>
+              <span className='flex'>
+                  <div className='flex items-center '>
+                      <Badge />
+                  </div>
+                  <div className='ml-2'>
+                    <h4 className='text-[16px] font-semibold leading-tight mb-1'>
+                      BS Computer Science - The Islamia University of Bahawalpur
+                    </h4>
+                    <div>
+                      <h4 className='text-[13px] font-light inline text-[var(--accent5)]'>
+                        7th Semester
+                      </h4>
+                      <h4 className='text-[13px] font-light text-[var(foreground)] mt-1'>
+                      Session: 2021-25
+                      </h4>
+                    </div>
+                  </div>
+              </span>
+            </div>
+            </div>
+        </div>
+        <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
+          <h3 className='font-semibold text-center text-[18px] mb-4'>
+            Projects
+          </h3>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+              <img src='/assets/portfolio1.png' alt='focus academy website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Portfolio Website
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/my-portfolio' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://my-portfolio-dsev.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+              <img src='/assets/earth.png' alt='focus academy website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Earth 3D
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/my-portfolio' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://my-portfolio-dsev.vercel.app/earth' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+              <img src='/assets/portfolio2.png' alt='focus academy website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Portfolio Website with 3D Particle System
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/Devxio-001' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://devxio-001.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+              <img src='/assets/fa.webp' alt='focus academy website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Focus Academy Website
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/focusacademy' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://joinasadullah.github.io/focusacademy/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="contact" className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
           <h3 className='font-semibold text-center text-[18px] mb-4'>
