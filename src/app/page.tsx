@@ -99,7 +99,7 @@ export default function Home() {
                 I excel in crafting precise web applications. With additional know how of cloud-native technologies,
                  Docker, Kubernetes, and Django, coupled with a proactive learning attitude,
                   I bring a versatile skill set and keen adaptability
-                   to drive impactful contributions to your team's success.
+                   to drive impactful contributions to your team&#39;s success.
               </p>
               <div className='mt-5 mb-2 '>
                 <a className='px-1' href='http://wa.me/923111678546' target='_blank'><WhatsappLogo/></a> 
