@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /favicon.ico
+Disallow: /_next/image?url=%2Fassets%2Fhubspotbadge.webp&w=640&q=75&dpl=dpl_sB75YCs3ctzGtSBf8qsW1ohuSLYx
+Disallow: /_next/image?url=%2Fassets%2Fhubspotbadge.webp&w=256&q=75&dpl=dpl_sB75YCs3ctzGtSBf8qsW1ohuSLYx
+Disallow: /_next/image?url=%2Fassets%2Fmetaprofessional.png&w=256&q=75&dpl=dpl_sB75YCs3ctzGtSBf8qsW1ohuSLY
+Disallow: /_next/image?url=%2Fassets%2Fmetaprofessional.png&w=640&q=75&dpl=dpl_sB75YCs3ctzGtSBf8qsW1ohuSLYx
+Disallow: /_next/image?url=%2Fassets%2Fibm-key-technology.png&w=640&q=75&dpl=dpl_sB75YCs3ctzGtSBf8qsW1ohuSLYx
+Disallow: /_next/image?url=%2Fassets%2Fibm-key-technology.png&w=256&q=75&dpl=dpl_sB75YCs3ctzGtSBf8qsW1ohuSLYx
+Disallow: /_next/image?url=%2Fassets%2Fgooglebadge.png&w=640&q=75&dpl=dpl_sB75YCs3ctzGtSBf8qsW1ohuSLYx
+Disallow: /_next/image?url=%2Fassets%2Fgooglebadge.png&w=256&q=75&dpl=dpl_sB75YCs3ctzGtSBf8qsW1ohuSLYx
+Disallow: /_next/image?url=%2Fassets%2Fmetaassociate.png&w=640&q=75&dpl=dpl_sB75YCs3ctzGtSBf8qsW1ohuSLYx
+Disallow: /_next/image?url=%2Fassets%2Fmetaassociate.png&w=256&q=75&dpl=dpl_sB75YCs3ctzGtSBf8qsW1ohuSLYx
+Disallow: /asadullah
