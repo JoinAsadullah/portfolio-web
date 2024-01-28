@@ -106,7 +106,7 @@ export default function Home() {
                 <a className='px-1' href='mailto:joinasadullah1@gmail.com' target='_blank'><GmailLogo/></a>
                 <a className='pr-1' href='https://github.com/JoinAsadullah' target='_blank'><GithubLogo/></a>
                 <a className='px-1' href='https://www.linkedin.com/in/joinasadullah/' target='_blank'><LinkedinLogo/></a>
-                <a className='px-1' href='https://www.linkedin.com/in/joinasadullah/' target='_blank'><button className='w-3 h-3' >CV</button></a>
+                <a className='px-1' href='/cv' target='_blank'><button className=' w-[45px] h-[45px] bg-accent1 rounded-full' >CV</button></a>
               </div>
             </div>
           </div>
