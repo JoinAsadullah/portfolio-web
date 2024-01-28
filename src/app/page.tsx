@@ -4,7 +4,8 @@ import ThemeBtn from './components/theme-btn.tsx'
 import CopyButton from './components/copyButton.tsx'
 import { DevxioLogo, FbLogo,LinkedinLogo, GmailLogo, WhatsappLogo, GithubLogo, Badge } from './svgs.tsx'
 import { useEffect, useState } from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
+import ContactForm from './components/contactus.tsx'
 
 
 export default function Home() {
@@ -251,7 +252,7 @@ export default function Home() {
             Education
           </h3>
             <div className=' flex flex-wrap mk-shadow1 rounded-xl p-3 md:px-5 md:py-5 mb-3'>
-            <div className='mb-6 mt-4'>
+            <div className='my-4'>
               <span className='flex'>
                   <div className='flex items-center '>
                       <Badge />
@@ -342,19 +343,22 @@ export default function Home() {
           <h3 className='font-semibold text-center text-[18px] mb-4'>
             Contact
           </h3>
-            <div className='mb-10'>
-              <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
-                <a className='truncate basis-4/5' href='mailto:asadullah@devxio.com' target='_blank'><p className=''>Email<br/><span className='hover:underline text-accent4 px-1 rounded-md'>joinasadullah1@gmail.com</span></p></a><CopyButton textToCopy="joinasadullah1@gmail.com"/>
+            <div className='mb-10 md:flex gap-3'>
+              <div className='order-2 basis-1/2'>
+                <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
+                  <a className='truncate basis-4/5' href='mailto:asadullah@devxio.com' target='_blank'><p className=''>Email<br/><span className='hover:underline text-accent4 px-1 rounded-md'>joinasadullah1@gmail.com</span></p></a><CopyButton textToCopy="joinasadullah1@gmail.com"/>
+                </div>
+                <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
+                  <a className='truncate basis-4/5' href='http://wa.me/923111678546' target='_blank'><p className=''>WhatsApp<br/><span className='hover:underline text-accent4 px-1 rounded-md'>+92 311 1678546</span></p></a><CopyButton textToCopy="http://wa.me/923111678546"/>
+                </div>
+                <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
+                  <a className='truncate basis-4/5' href='https://www.linkedin.com/in/joinasadullah/' target='_blank'><p className=''>LinkedIn<br/><span className='hover:underline text-accent4 px-1 rounded-md'>linkedin.com/in/joinasadullah</span></p></a><CopyButton textToCopy="https://www.linkedin.com/in/joinasadullah/"/>
+                </div>
+                <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-6'>
+                  <a className='truncate basis-4/5' href='https://github.com/JoinAsadullah' target='_blank'><p className=''>GitHub<br/><span className='hover:underline text-accent4 px-1 rounded-md'>github.com/JoinAsadullah</span></p></a><CopyButton textToCopy="https://github.com/JoinAsadullah"/>
+                </div>
               </div>
-              <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
-                <a className='truncate basis-4/5' href='http://wa.me/923111678546' target='_blank'><p className=''>WhatsApp<br/><span className='hover:underline text-accent4 px-1 rounded-md'>+92 311 1678546</span></p></a><CopyButton textToCopy="http://wa.me/923111678546"/>
-              </div>
-              <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
-                <a className='truncate basis-4/5' href='https://www.linkedin.com/in/joinasadullah/' target='_blank'><p className=''>LinkedIn<br/><span className='hover:underline text-accent4 px-1 rounded-md'>linkedin.com/in/joinasadullah</span></p></a><CopyButton textToCopy="https://www.linkedin.com/in/joinasadullah/"/>
-              </div>
-              <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
-                <a className='truncate basis-4/5' href='https://github.com/JoinAsadullah' target='_blank'><p className=''>GitHub<br/><span className='hover:underline text-accent4 px-1 rounded-md'>github.com/JoinAsadullah</span></p></a><CopyButton textToCopy="https://github.com/JoinAsadullah"/>
-              </div>
+              <ContactForm />
             </div>
         </div>
       </div>

@@ -55,11 +55,11 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form className='comp-width px-4 pb-7 pt-7 bg-accent1 rounded-2xl mb-7 border-accent2 border-[1px] sm:px-6' onSubmit={handleSubmit} >
-      <p className={`block w-full rounded-md text-xs pl-2 font-semibold text-[var(--blue-btn)] ${message==1 ? '': 'hidden'}`}>Form submitted successfully &#10003;</p>
-      <p className={`block w-full rounded-md text-xs pl-2 font-semibold text-[#ff0000] ${message==2 ? '':'hidden'} `}>Error occurred during form submission !!!</p>
+    <form className='mk-shadow1 rounded-xl p-4 md:px-4 md:py-3 mb-3 basis-1/2 shrink-0' onSubmit={handleSubmit} >
+      <p className={`block w-full rounded-md text-xs pl-2 font-semibold text-[var(--blue-btn)] mt-3 ${message==1 ? '': 'hidden'}`}>Form submitted successfully &#10003;</p>
+      <p className={`block w-full rounded-md text-xs pl-2 font-semibold text-[#ff0000] mt-3  ${message==2 ? '':'hidden'} `}>Error occurred during form submission !!!</p>
       <div>
-        <label className='text-v1 block w-full rounded-md pl-2 pt-6' htmlFor="name">Name</label>
+        <label className='text-v1 block w-full rounded-md pl-2 mt-4' htmlFor="name">Name</label>
         <input className={`block w-full rounded-md mb-4 px-2 h-7 disabled:dim-fltr bg-accent2 text-v1 autofill:text-v1 `}
           type="text"
           id="name"
