@@ -341,7 +341,7 @@ export default function Home() {
           <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
             <div className='w-full aspect-[2.2] relative truncate
             '>
-              <img src='/assets/budget-app.png' alt='react bujget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+              <img src='/assets/budget-app.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
             </div>
             <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
               <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
