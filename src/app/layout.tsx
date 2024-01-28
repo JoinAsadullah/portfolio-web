@@ -55,7 +55,7 @@ export default function RootLayout({
         </Script>
 
         <meta name="color-scheme" content="light" />
-        <meta name="keywords" content="Muhammad Asadullah, Full Stack Developer, MERN Stack, Next.js, Web Applications, Cloud-Native, Docker, Kubernetes, Django, Software Engineer, Frontend, Backend, JavaScript, React, Node.js, Express.js, MongoDB, AWS, Google Cloud Platform, Azure, DevOps, Agile Development">
+        <meta name="keywords" content="Muhammad Asadullah, Full Stack Developer, MERN Stack, Next.js, Web Applications, Cloud-Native, Docker, Kubernetes, Django, Software Engineer, Frontend, Backend, JavaScript, React, Node.js, Express.js, MongoDB, AWS, Google Cloud Platform, Azure, DevOps, Agile Development"/>
         <meta name="author" content="Muhammad Asadullah"/>
         <meta name="robots" content="index, follow"/>
 
