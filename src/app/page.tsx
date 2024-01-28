@@ -60,7 +60,6 @@ export default function Home() {
     "Django",
     "Microservices",
     "Cloud Native",
-    "Serverless",
     "Docker",
     "Kubernetes",
     "Flask",

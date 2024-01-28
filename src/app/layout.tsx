@@ -6,8 +6,8 @@ import { Providers } from "./Providers.tsx";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-    title: "Muhammad Asadullah - Digital Marketing Expert",
-    description: "Muhammad Asadullah is Digital Marketing Expert & Google and Meta Ads Specialist. Hire and boost Your Business with Proven Social Media Strategies.",
+    title: "Muhammad Asadullah - Full Stack Software Developer",
+    description: "Muhammad Asadullah is a versatile Full Stack Software Developer skilled in MERN stack, cloud-native technologies, Docker, Kubernetes, and Django. Explore his portfolio showcasing precise web applications and adaptable expertise for impactful contributions to your projects.",
   }
   
   
@@ -55,12 +55,12 @@ export default function RootLayout({
         </Script>
 
         <meta name="color-scheme" content="light" />
-        <meta name="keywords" content="Muhammad, Asadullah, Hire Digital Marketer, Hire Digital Marketing Expert, Hire Software Engineer,Hire Certified digital marketing professional, Hire Digital Marketing Strategist, Hire Business analytics expert, Hire Google ads expert, Hire Social Media marketing expert, Hire Email Marketing expert, Hire Meta ads expert, Hire Tiktok ads expert, Hire Business consultant"/>
+        <meta name="keywords" content="Muhammad Asadullah, Full Stack Developer, MERN Stack, Next.js, Web Applications, Cloud-Native, Docker, Kubernetes, Django, Software Engineer, Frontend, Backend, JavaScript, React, Node.js, Express.js, MongoDB, AWS, Google Cloud Platform, Azure, DevOps, Agile Development">
         <meta name="author" content="Muhammad Asadullah"/>
         <meta name="robots" content="index, follow"/>
 
-        <meta property="og:title" content="Muhammad Asadullah - Digital Marketing Expert"/>
-        <meta property="og:description" content="Muhammad Asadullah is Digital Marketing Expert & Google and Meta Ads Specialist. Hire and boost Your Business with Proven Social Media Strategies."/>
+        <meta property="og:title" content="Muhammad Asadullah - Full Stack Software Developer (MERN Stack)"/>
+        <meta property="og:description" content="Muhammad Asadullah is a versatile Full Stack Software Developer skilled in MERN stack, cloud-native technologies, Docker, Kubernetes, and Django."/>
         <meta property="og:image" content="https://www.devxio.com/asadullah.webp"/>
         <meta property="og:url" content="https://www.devxio.com"/>
 
