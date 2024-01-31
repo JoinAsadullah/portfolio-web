@@ -85,7 +85,7 @@ export default function Home() {
         <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 md:mt-9 w-full max-w-[1000px] mx-auto'>
           <div className='mk-shadow1 rounded-xl p-4 md:px-6 md:py-4  sm:flex'>
             <div className='rounded-full p-3 flex items-center justify-center'>
-              <img className='rounded-full border-[3px] border-solid border-[var(--accent1)] sm:w-[900px]' src="/assets/asadullah.webp" alt="Display Picture: Muhammad Asadullah, Software Developer and Digital Marketing Expert."/>
+              <img className='rounded-full border-[3px] border-solid border-[var(--accent1)] sm:w-[900px]' src="/assets/asadullah.webp" alt="Display Picture: Muhammad Asadullah, Full Stack Software Developer (MERN)"/>
             </div>
             <div>
               <div className='mt-5 mb-2 '>
