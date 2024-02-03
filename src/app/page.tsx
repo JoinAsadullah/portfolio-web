@@ -281,6 +281,36 @@ export default function Home() {
           <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
             <div className='w-full aspect-[2.2] relative truncate
             '>
+              <img src='/assets/budget-app.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                React budget app
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/ejtos-react_budget_app' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://ejtos-react-budget-app-three.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+              <img src='/assets/financial-dashboard.png' alt='next js financial dashboard website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Next JS financial dashboard
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/financial-dashboard-learn-nextjs' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://financial-dashboard-learn-nextjs.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
               <img src='/assets/portfolio1.png' alt='portfolio website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
             </div>
             <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
@@ -335,36 +365,6 @@ export default function Home() {
               <div className='flex justify-center items-center pic-invert'>
                 <a href='https://github.com/JoinAsadullah/asadullah-portfolio' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
                 <a href='https://joinasadullah.github.io/asadullah-portfolio/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-              <img src='/assets/budget-app.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                React budget app
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/ejtos-react_budget_app' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://ejtos-react-budget-app-three.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-              <img src='/assets/financial-dashboard.png' alt='next js financial dashboard website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Next JS financial dashboard
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/financial-dashboard-learn-nextjs' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://financial-dashboard-learn-nextjs.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
               </div>
             </div>
           </div>
