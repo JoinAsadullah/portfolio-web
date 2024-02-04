@@ -106,7 +106,7 @@ export default function Home() {
                 <a className='px-1' href='mailto:joinasadullah1@gmail.com' target='_blank'><GmailLogo/></a>
                 <a className='pr-1' href='https://github.com/JoinAsadullah' target='_blank'><GithubLogo/></a>
                 <a className='px-1' href='https://www.linkedin.com/in/joinasadullah/' target='_blank'><LinkedinLogo/></a>
-                <a className='px-1' href='/cv' target='_blank'><button className=' w-[45px] h-[45px] bg-accent1 rounded-full' >CV</button></a>
+                <a className='px-1' href='/cv' target='_blank'><button className='text-xl black w-[45px] h-[45px] bg-accent1 rounded-full outline-title font-bold' >CV</button></a>
               </div>
             </div>
           </div>
@@ -305,6 +305,21 @@ export default function Home() {
               <div className='flex justify-center items-center pic-invert'>
                 <a href='https://github.com/JoinAsadullah/financial-dashboard-learn-nextjs' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
                 <a href='https://financial-dashboard-learn-nextjs.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+              <img src='/assets/current.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Portfolio Website NextJS Current
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/portfolio-web' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='/'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
               </div>
             </div>
           </div>
