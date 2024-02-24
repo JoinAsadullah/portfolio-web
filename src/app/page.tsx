@@ -386,21 +386,6 @@ export default function Home() {
           <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
             <div className='w-full aspect-[2.2] relative truncate
             '>
-              <img src='/assets/calculator.png' alt='calculator website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Calculator HTML CSS JS
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/calculator' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://joinasadullah.github.io/calculator/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
               <img src='/assets/fa.webp' alt='focus academy website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
             </div>
             <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
