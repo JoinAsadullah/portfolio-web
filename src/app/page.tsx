@@ -57,14 +57,6 @@ export default function Home() {
     "Serverless",
     "Python",
     "SQL",
-    "Django",
-    "Microservices",
-    "Cloud Native",
-    "Docker",
-    "Kubernetes",
-    "Flask",
-    "3JS",
-    "IBM Cloud"
   ];
   
   return (
@@ -263,24 +255,55 @@ export default function Home() {
                     </h4>
                     <div>
                       <h4 className='text-[13px] font-light inline text-[var(--accent5)]'>
-                        7th Semester
+                        8th Semester
                       </h4>
                       <h4 className='text-[13px] font-light text-[var(foreground)] mt-1'>
-                      Session: 2021-25
+                      Expected completion: Jan 2025
                       </h4>
                     </div>
                   </div>
               </span>
             </div>
             </div>
-        </div>
-        <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
-          <h3 className='font-semibold text-center text-[18px] mb-4'>
-            Projects
-          </h3>
+          </div>
+          <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
+            <h3 className='font-semibold text-center text-[18px] mb-4'>
+              Projects
+            </h3>
+            <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+
+              <div className='w-full aspect-[2.2] relative truncate'>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-[#DFB722] transition-colors text-background px-2 py-1 text-xs font-medium"
+
+                  >
+                    Latest
+                  </div>
+                </div>
+                <img src='/assets/v0.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken' />
+              </div>
+              <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+                <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                  AI Chat
+                </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/v0chat' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://v0gpt.devxio.com' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
           <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
             <div className='w-full aspect-[2.2] relative truncate
             '>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
+
+                  >
+                    Dec 2023
+                  </div>
+                </div>
               <img src='/assets/budget-app.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
             </div>
             <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
@@ -296,6 +319,14 @@ export default function Home() {
           <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
             <div className='w-full aspect-[2.2] relative truncate
             '>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
+
+                  >
+                    Jan 2024
+                  </div>
+                </div>
               <img src='/assets/financial-dashboard.png' alt='next js financial dashboard website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
             </div>
             <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
@@ -326,21 +357,14 @@ export default function Home() {
           <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
             <div className='w-full aspect-[2.2] relative truncate
             '>
-              <img src='/assets/portfolio1.png' alt='portfolio website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Portfolio Website
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/my-portfolio' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://my-portfolio-dsev.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
+
+                  >
+                    Mar 2023
+                  </div>
+                </div>
               <img src='/assets/earth.png' alt='3d earth website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
             </div>
             <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
@@ -356,36 +380,14 @@ export default function Home() {
           <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
             <div className='w-full aspect-[2.2] relative truncate
             '>
-              <img src='/assets/portfolio2.png' alt='portfolio website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Portfolio Website with 3D Particle System
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/Devxio-001' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://devxio-001.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-              <img src='/assets/portfolio3.png' alt='portfolio website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Portfolio Website with 3D Model
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/asadullah-portfolio' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://joinasadullah.github.io/asadullah-portfolio/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
+
+                  >
+                    Aug 2022
+                  </div>
+                </div>
               <img src='/assets/fa.webp' alt='focus academy website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
             </div>
             <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
@@ -433,10 +435,10 @@ export default function Home() {
           <h3 className='font-semibold text-center text-[18px] mb-4'>
             Contact
           </h3>
-            <div className='mb-10 md:flex gap-3'>
-              <div className='order-2 basis-1/2'>
+            <div className=''>
+              <div className=''>
                 <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
-                  <a className='truncate basis-4/5' href='mailto:asadullah@devxio.com' target='_blank'><p className=''>Email<br/><span className='hover:underline text-accent4 px-1 rounded-md'>joinasadullah1@gmail.com</span></p></a><CopyButton textToCopy="joinasadullah1@gmail.com"/>
+                  <a className='truncate basis-4/5' href='mailto:asadullah@devxio.com' target='_blank'><p className=''>Email<br/><span className='hover:underline text-accent4 px-1 rounded-md'>contact@asadullah.dev</span></p></a><CopyButton textToCopy="contact@asadullah.dev"/>
                 </div>
                 <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
                   <a className='truncate basis-4/5' href='http://wa.me/923301453642' target='_blank'><p className=''>WhatsApp<br/><span className='hover:underline text-accent4 px-1 rounded-md'>+92 330 1453642</span></p></a><CopyButton textToCopy="+923301453642"/>
@@ -448,7 +450,6 @@ export default function Home() {
                   <a className='truncate basis-4/5' href='https://github.com/JoinAsadullah' target='_blank'><p className=''>GitHub<br/><span className='hover:underline text-accent4 px-1 rounded-md'>github.com/JoinAsadullah</span></p></a><CopyButton textToCopy="https://github.com/JoinAsadullah"/>
                 </div>
               </div>
-              <ContactForm />
             </div>
         </div>
       </div>

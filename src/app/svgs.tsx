@@ -1,33 +1,15 @@
 export function DevxioLogo() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 707.643 148.77">
-            <defs>
-                <clipPath id="clipPath">
-                    <rect id="Rectangle_29" data-name="Rectangle 29" width="149.578" height="148.77" fill="none" />
-                </clipPath>
-                <clipPath id="clipPath-2">
-                    <rect id="Rectangle_36" data-name="Rectangle 36" width="542.187" height="148.77" fill="var(--foreground)" />
-                </clipPath>
-            </defs>
-            <g id="Group_23" data-name="Group 23" transform="translate(-1958.544 -892)">
-                <g id="Group_20" data-name="Group 20" transform="translate(1958.544 892)">
-                    <g id="Group_10" data-name="Group 10" transform="translate(0 0)" clipPath="url(#clip-path)">
-                        <path id="Path_17" data-name="Path 17" d="M75.2,0a74.385,74.385,0,0,1,0,148.77M0,.046H75.2V148.734H0ZM75.2,7.787C39.221,8.153,10.344,38.272,10.7,75.048c.359,36.259,29.027,65.563,64.494,65.93" transform="translate(0 0.006)" fill="var(--foreground)" />
-                    </g>
-                </g>
-                <g id="Group_22" data-name="Group 22" transform="translate(2124 892)">
-                    <g id="Group_21" data-name="Group 21" clipPath="url(#clip-path-2)">
-                        <path id="Path_34" data-name="Path 34" d="M119.181,89.424C122.417,12.76-3.494,16.089.121,91.027c-4.24,66.442,103.922,77.676,118,22.57l-28.5-.255a21.444,21.444,0,0,1-5.9,8.02c-19.6,14.989-54.557,3.531-53.653-23.765h89.112ZM32.4,80.6c1.483-33.705,57.477-34.545,58.43,0Z" fill="var(--foreground)" />
-                        <path id="Path_35" data-name="Path 35" d="M243.284,35.6l-44.624,109H165.921L121.41,35.6h31.513l29.032,81H183.3l28.808-81Z" fill="var(--foreground)" />
-                        <path id="Path_36" data-name="Path 36" d="M279.364,35.6,304.591,75.96,330.266,35.6h31.282c-46.555,69.868-46.175,39.782.673,109H331.163L304.591,105.4,278.467,144.6H247.186c46.488-69.106,46.617-39.376.9-109Z" fill="var(--foreground)" />
-                        <rect id="Rectangle_35" data-name="Rectangle 35" width="30" height="109" transform="translate(376.181 35.597)" fill="var(--foreground)" />
-                        <path id="Path_37" data-name="Path 37" d="M482.032,147.168c-80.124,2.509-80.054-115.207,0-112.695,80.185-2.427,80.227,115.138,0,112.695m0-20.7c40.4,1.665,40.379-72.971,0-71.289-40.367-1.538-40.39,72.811,0,71.289" fill="var(--foreground)" />
-                        <path id="Path_38" data-name="Path 38" d="M406.181,14.6c.284,19.462-30.287,19.462-30,0-.284-19.461,30.287-19.461,30,0" fill="var(--foreground)" />
-                    </g>
-                </g>
-            </g>
-        </svg>
-    )
+      <svg xmlns="http://www.w3.org/2000/svg" height={16} viewBox="0 0 43.96 16">
+        <g id="Layer_2">
+          <g id="Layer_1-2">
+            <path d="M16.09 8a8 8 0 0 1-8 8H0V0h8.09a8 8 0 0 1 8 8Z" fill="var(--foreground)" />
+            <path id="Path_34" d="M30.61 9.62c.35-8.25-13.19-7.89-12.8.17C17.35 16.94 29 18.14 30.5 12.22l-3.07 0a2.34 2.34 0 0 1-.63.86c-2.11 1.61-5.87.38-5.77-2.55h9.58Zm-9.33-.95c.16-3.63 6.18-3.72 6.28 0Z" fill="var(--foreground)" />
+            <path id="Path_35" d="M44 3.83l-4.8 11.72H35.64l-4.79-11.72h3.39l3.12 8.71h.15L40.6 3.83Z" fill="var(--foreground)" />
+          </g>
+        </g>
+      </svg>
+    );
 }
 
 export function FbLogo() {
@@ -154,15 +136,19 @@ export function GithubLogo() {
 }
 export function Badge() {
     return (
-        <svg className="mx-[auto]" xmlns="http://www.w3.org/2000/svg" width="100" height="auto" viewBox="-10 0 1177.735 734.815">
-            <g id="Group_30" data-name="Group 30" transform="translate(0.002 0.005)">
-                <path fill="none" stroke="var(--foreground)" strokeWidth="12" id="Path_54" data-name="Path 54" d="M1489.82,869,1210.54,972.28,989.35,1054l-64.12,23.71a14.31,14.31,0,0,1-9.91,0L851.2,1054,630,972.28l-25.44-9.4L908.31,850.56a19.56,19.56,0,0,0-6.79-37.9,19.2,19.2,0,0,0-6.78,1.21l-327,120.87a19.71,19.71,0,0,0-11.09,10.43L350.73,869c-12.43-4.6-12.43-22.21,0-26.81L915.32,633.48a14.31,14.31,0,0,1,9.91,0l564.59,208.73C1502.25,846.81,1502.25,864.42,1489.82,869Z" transform="translate(-341.41 -632.6)" />
-                <path fill="none" stroke="var(--foreground)" strokeWidth="12" id="Path_55" data-name="Path 55" d="M1210.54,1107.73V1117c0,35.78-290.26,113.69-290.26,113.69S630,1152.77,630,1117V989.63l181.85,67.22L909.68,1093a30.22,30.22,0,0,0,21.2,0l97.81-36.17,181.85-67.22Z" transform="translate(-341.41 -632.6)" />
-                <path fill="none" stroke="var(--foreground)" strokeWidth="12" id="Path_56" data-name="Path 56" d="M904.91,841.4,590.44,957.67l-3.36,1.24a4.18,4.18,0,0,0-2.73,3.93v236.33a10.185,10.185,0,0,1-9.28,10.31,9.77,9.77,0,0,1-10.29-9.77V953.1a9.74,9.74,0,0,1,6.39-9.16L898.13,823a9.791,9.791,0,0,1,6.78,18.37Z" transform="translate(-341.41 -632.6)" />
-                <circle fill="none" stroke="var(--foreground)" strokeWidth="12" id="Ellipse_14" data-name="Ellipse 14" cx="21.74" cy="21.74" r="21.74" transform="translate(204.062 562.682) rotate(-22.5)" />
-                <path fill="none" stroke="var(--foreground)" strokeWidth="12" id="Path_57" data-name="Path 57" d="M620,1338.7l6.65,20a122.482,122.482,0,0,1-24.1,6.89l-5.38-17.09-10.4,18.82-2-6.36-2.38,6.45a120.858,120.858,0,0,1-38.85-6.39l-.55-3.75-2.77,2.61V1341.7s-4.54,12.62-5.61,16a121.254,121.254,0,0,1-14.71-7.37c1.3-4.37,4.37-14.35,5.25-16.83-1.18,2.45-6,12.17-7.63,15.36-2.78-1.76-4.28-2.9-4.28-2.9l48.47-117.12c7.6,9.3,23.22,2.9,23.22,2.9L630,1357.29Z" transform="translate(-341.41 -632.6)" />
-            </g>
-        </svg>
+<svg xmlns="http://www.w3.org/2000/svg" width={100} viewBox="0 0 298.98 218">
+  <defs>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <polygon className="cls-1" points="271.26 67.13 220.09 90.32 138.6 127.26 58.32 90.35 58.32 90.34 7 66.75 138.6 7 271.26 67.13" fill="none" stroke="var(--foreground)" strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />
+      <path className="cls-1" d="M219.17,142.83s.92,10.73-10.21,17.36C143.34,188.53,94.83,168.62,76.71,164S58.32,141.3,58.32,141.3v-51l80.28,36.91,81.49-36.94Z" fill="none" stroke="var(--foreground)" strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />
+      <line className="cls-1" x1="271.26" y1="211" x2="271.26" y2="185.49" fill="none" stroke="var(--foreground)" strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />
+      <line className="cls-1" x1="271.26" y1="143.87" x2="271.26" y2="67.13" fill="none" stroke="var(--foreground)" strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />
+      <path className="cls-1" d="M292,164.68a20.81,20.81,0,0,1-20.72,20.81h-.09a20.81,20.81,0,0,1,0-41.62h.09A20.81,20.81,0,0,1,292,164.68Z" fill="none" stroke="var(--foreground)" strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />
+    </g>
+  </g>
+</svg>
 
     )
 }
