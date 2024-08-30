@@ -47,6 +47,7 @@ export default function Home() {
 
   const skills = [
     "JavaScript",
+    "TypeScript",
     "React JS",
     "Next JS",
     "MongoDB",
@@ -54,9 +55,12 @@ export default function Home() {
     "Node JS",
     "Express JS",
     "Git",
-    "Serverless",
     "Python",
     "SQL",
+    " ",
+    " ",
+    " ",
+    " ",
   ];
   
   return (
@@ -88,17 +92,237 @@ export default function Home() {
               <p className='mk-p'>
                 Greetings! <br/>
                 As a junior Full Stack Software Developer specializing in MERN stack and Next JS, 
-                I excel in crafting precise web applications. With additional know how of cloud-native technologies,
-                 Docker, Kubernetes, and Django, coupled with a proactive learning attitude,
+                I excel in crafting precise web applications. With additional know how of cloud-native technologies, coupled with a proactive learning attitude,
                   I bring a versatile skill set and keen adaptability
-                   to drive impactful contributions to your team&#39;s success.
+                   to create impactful and cutting-edge software solutions.
               </p>
               <div className='mt-5 mb-2 '>
                 <a className='px-1' href='http://wa.me/923301453642' target='_blank'><WhatsappLogo/></a> 
-                <a className='px-1' href='mailto:joinasadullah1@gmail.com' target='_blank'><GmailLogo/></a>
+                <a className='px-1' href='mailto:contact@asadullah.dev' target='_blank'><GmailLogo/></a>
                 <a className='pr-1' href='https://github.com/JoinAsadullah' target='_blank'><GithubLogo/></a>
                 <a className='px-1' href='https://www.linkedin.com/in/joinasadullah/' target='_blank'><LinkedinLogo/></a>
                 <a className='px-1' href='/cv' target='_blank'><button className='text-xl black w-[45px] h-[45px] bg-accent1 rounded-full outline-title font-bold' >CV</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
+          <h3 className='font-semibold text-center text-[18px] mb-4'>
+            Skills
+          </h3>
+            <div className=' flex flex-wrap mk-shadow1 rounded-xl p-3 md:px-5 md:py-5 mb-3'>
+              {skills.map((skill, index) => (
+                <ul key={index} className=' pb-1 mb-2 px-2 mr-1 inline border-solid border-accent2 bg-accent2 border-[2px] rounded-full my-1 grow text-center'>
+                  <li className='text-[12px]  font-normal inline'>
+                    {skill}
+                  </li>
+                  <Image className='inline dark:invert mt-[3px]' src="/assets/badge1.webp" alt="" width={10} height={10} />
+                </ul>
+              ))}
+            </div>
+        </div>
+        <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
+          <h3 className='font-semibold text-center text-[18px] mb-4'>
+            Education
+          </h3>
+            <div className=' flex flex-wrap mk-shadow1 rounded-xl p-3 md:px-5 md:py-5 mb-3'>
+            <div className='my-4'>
+              <span className='flex'>
+                  <div className='flex items-center '>
+                      <Badge />
+                  </div>
+                  <div className='ml-2'>
+                    <h4 className='text-[16px] font-semibold leading-tight mb-1'>
+                      BS Computer Science - The Islamia University of Bahawalpur
+                    </h4>
+                    <div>
+                      <h4 className='text-[13px] font-light inline text-[var(--accent5)]'>
+                        8th Semester
+                      </h4>
+                      <h4 className='text-[13px] font-light text-[var(foreground)] mt-1'>
+                      Expected completion: Jan 2025
+                      </h4>
+                    </div>
+                  </div>
+              </span>
+            </div>
+            </div>
+          </div>
+        <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
+            <h3 className='font-semibold text-center text-[18px] mb-4'>
+              Projects
+            </h3>
+            <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+
+              <div className='w-full aspect-[2.2] relative truncate'>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-[#DFB722] transition-colors text-background px-2 py-1 text-xs font-medium"
+                  >
+                    Latest
+                  </div>
+                </div>
+                <img src='/assets/v0.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken' />
+              </div>
+              <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+                <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                  AI Chat | Next.js 14, Vercel AI SDK, OpenAI, Prisma, Auth.js, Tailwind
+                </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/v0chat' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://v0gpt.devxio.com' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
+
+                  >
+                    Jan 2024
+                  </div>
+                </div>
+              <img src='/assets/financial-dashboard.png' alt='next js financial dashboard website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Next JS financial dashboard | Next.js 14
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/financial-dashboard-learn-nextjs' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://financial-dashboard-learn-nextjs.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
+
+                  >
+                    Dec 2023
+                  </div>
+                </div>
+              <img src='/assets/budget-app.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                React budget app | Create react app
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/ejtos-react_budget_app' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://ejtos-react-budget-app-three.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+              <img src='/assets/current.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Portfolio Website NextJS Current
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/portfolio-web' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='/'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
+                  >
+                    Mar 2023
+                  </div>
+                </div>
+              <img src='/assets/earth.png' alt='3d earth website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Earth 3D
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/my-portfolio' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://my-portfolio-dsev.vercel.app/earth' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
+
+                  >
+                    Aug 2022
+                  </div>
+                </div>
+              <img src='/assets/fa.webp' alt='focus academy website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Focus Academy Website
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/focusacademy' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://joinasadullah.github.io/focusacademy/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
+
+                  >
+                    Jul 2022
+                  </div>
+                </div>
+              <img src='/assets/bk.webp' alt='Client website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Client Website HTML CSS JS
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/bika' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://joinasadullah.github.io/bika/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+            <div className='w-full aspect-[2.2] relative truncate
+            '>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
+
+                  >
+                    Jul 2022
+                  </div>
+                </div>
+              <img src='/assets/template-web.png' alt='template website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
+            </div>
+            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                Design to HTML CSS JS
+              </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/templateweb' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://joinasadullah.github.io/templateweb/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
               </div>
             </div>
           </div>
@@ -224,213 +448,8 @@ export default function Home() {
             </div>  
           </div>
         </div>
-        <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
-          <h3 className='font-semibold text-center text-[18px] mb-4'>
-            Skills
-          </h3>
-            <div className=' flex flex-wrap mk-shadow1 rounded-xl p-3 md:px-5 md:py-5 mb-3'>
-              {skills.map((skill, index) => (
-                <ul key={index} className=' pb-1 mb-2 px-2 mr-1 inline border-solid border-accent2 bg-accent2 border-[2px] rounded-full my-1 grow text-center'>
-                  <li className='text-[12px]  font-normal inline'>
-                    {skill}
-                  </li>
-                  <Image className='inline dark:invert mt-[3px]' src="/assets/badge1.webp" alt="" width={10} height={10} />
-                </ul>
-              ))}
-            </div>
-        </div>
-        <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
-          <h3 className='font-semibold text-center text-[18px] mb-4'>
-            Education
-          </h3>
-            <div className=' flex flex-wrap mk-shadow1 rounded-xl p-3 md:px-5 md:py-5 mb-3'>
-            <div className='my-4'>
-              <span className='flex'>
-                  <div className='flex items-center '>
-                      <Badge />
-                  </div>
-                  <div className='ml-2'>
-                    <h4 className='text-[16px] font-semibold leading-tight mb-1'>
-                      BS Computer Science - The Islamia University of Bahawalpur
-                    </h4>
-                    <div>
-                      <h4 className='text-[13px] font-light inline text-[var(--accent5)]'>
-                        8th Semester
-                      </h4>
-                      <h4 className='text-[13px] font-light text-[var(foreground)] mt-1'>
-                      Expected completion: Jan 2025
-                      </h4>
-                    </div>
-                  </div>
-              </span>
-            </div>
-            </div>
-          </div>
-          <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
-            <h3 className='font-semibold text-center text-[18px] mb-4'>
-              Projects
-            </h3>
-            <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
 
-              <div className='w-full aspect-[2.2] relative truncate'>
-                <div className="absolute top-4 right-4 z-10">
-                  <div
-                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-[#DFB722] transition-colors text-background px-2 py-1 text-xs font-medium"
 
-                  >
-                    Latest
-                  </div>
-                </div>
-                <img src='/assets/v0.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken' />
-              </div>
-              <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-                <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                  AI Chat
-                </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/v0chat' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://v0gpt.devxio.com' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-                <div className="absolute top-4 right-4 z-10">
-                  <div
-                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
-
-                  >
-                    Dec 2023
-                  </div>
-                </div>
-              <img src='/assets/budget-app.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                React budget app
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/ejtos-react_budget_app' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://ejtos-react-budget-app-three.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-                <div className="absolute top-4 right-4 z-10">
-                  <div
-                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
-
-                  >
-                    Jan 2024
-                  </div>
-                </div>
-              <img src='/assets/financial-dashboard.png' alt='next js financial dashboard website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Next JS financial dashboard
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/financial-dashboard-learn-nextjs' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://financial-dashboard-learn-nextjs.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-              <img src='/assets/current.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Portfolio Website NextJS Current
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/portfolio-web' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='/'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-                <div className="absolute top-4 right-4 z-10">
-                  <div
-                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
-
-                  >
-                    Mar 2023
-                  </div>
-                </div>
-              <img src='/assets/earth.png' alt='3d earth website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Earth 3D
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/my-portfolio' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://my-portfolio-dsev.vercel.app/earth' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-                <div className="absolute top-4 right-4 z-10">
-                  <div
-                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
-
-                  >
-                    Aug 2022
-                  </div>
-                </div>
-              <img src='/assets/fa.webp' alt='focus academy website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Focus Academy Website
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/focusacademy' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://joinasadullah.github.io/focusacademy/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-              <img src='/assets/bk.webp' alt='Client website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Client Website HTML CSS JS
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/bika' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://joinasadullah.github.io/bika/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-              <img src='/assets/template-web.png' alt='template website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Design to HTML CSS JS
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/templateweb' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://joinasadullah.github.io/templateweb/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-        </div>
         <div id="contact" className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
           <h3 className='font-semibold text-center text-[18px] mb-4'>
             Contact
