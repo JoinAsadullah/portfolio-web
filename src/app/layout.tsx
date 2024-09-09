@@ -61,8 +61,8 @@ export default function RootLayout({
 
         <meta property="og:title" content="Muhammad Asadullah - Full Stack Software Developer (MERN Stack)"/>
         <meta property="og:description" content="Muhammad Asadullah is a versatile Full Stack Software Developer skilled in MERN stack, Next.JS, and cloud-native technologies."/>
-        <meta property="og:image" content="https://www.devxio.com/assets/asadullah.webp"/>
-        <meta property="og:url" content="https://www.devxio.com"/>
+        <meta property="og:image" content="https://www.asadullah.dev/assets/asadullah.webp"/>
+        <meta property="og:url" content="https://www.asadullah.dev"/>
 
 
 
