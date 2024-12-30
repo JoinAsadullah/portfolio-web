@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import Script from 'next/script';
 import { Providers } from "./Providers.tsx";
 
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -18,41 +20,13 @@ export default function RootLayout({
 }) {
   return (
 
+
+
     <html lang="en" className='' suppressHydrationWarning>
       <head>
         <link rel="preload" href="assets/asadullah/webp" as="image"/>
-        {/* <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-RSF1SVHWW3`}
-        />
 
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'G-RSF1SVHWW3');
-                `}
-        </Script>
 
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=AW-11293577838`}
-        />
-
-        <Script id="google-ads" strategy="afterInteractive">
-          {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'AW-11293577838');
-                `}
-        </Script>
-        <Script id="google-ads-pageview" strategy="afterInteractive">
-          {`
-                  gtag('event', 'conversion', {'send_to': 'AW-11293577838/kgY1CMC_4c4YEO6kmYkq'});
-                `}
-        </Script> */}
 
         <meta name="color-scheme" content="light" />
         <meta name="keywords" content="Muhammad Asadullah, Full Stack Developer, MERN Stack, Next.js, Web Applications, Cloud-Native, Docker, Kubernetes, Django, Software Engineer, Frontend, Backend, JavaScript, React, Node.js, Express.js, MongoDB"/>
@@ -71,6 +45,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="favicon.ico" sizes='48x48' />
       </head>
       <body className={inter.className}><Providers>{children}</Providers></body>
+      <GoogleAnalytics gaId="G-1MN0KQFW4M" />
     </html>
   )
 }
