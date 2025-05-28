@@ -30,6 +30,23 @@ export function FbLogo() {
       </svg>
     );
   }
+
+  export function ResumeLogo() {
+    return (
+      <svg className="inline" xmlns="http://www.w3.org/2000/svg" width="45" viewBox="0 0 80 80">
+        <circle cx="40" cy="40" r="40" fill="var(--accent1)" />
+        <g transform="scale(0.85) translate(6, 6)">
+          <rect x="24" y="18" width="32" height="44" rx="4" fill="none" stroke="var(--foreground)" strokeWidth="2" />
+          <rect x="30" y="26" width="20" height="4" rx="2" fill="var(--foreground)" />
+          <rect x="30" y="34" width="20" height="3" rx="1.5" fill="var(--foreground)" />
+          <rect x="30" y="41" width="14" height="3" rx="1.5" fill="var(--foreground)" />
+          <rect x="30" y="48" width="10" height="3" rx="1.5" fill="var(--foreground)" />
+          <rect x="30" y="55" width="8" height="3" rx="1.5" fill="var(--foreground)" />
+          <rect x="44" y="48" width="6" height="10" rx="2" fill="none" stroke="var(--foreground)" strokeWidth="2" />
+        </g>
+      </svg>
+    );
+  }
   
   export function GmailLogo() {
     return (

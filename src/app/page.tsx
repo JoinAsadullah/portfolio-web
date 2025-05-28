@@ -2,15 +2,13 @@
 import ThemeBtn from './components/theme-btn.tsx'
 //import Loader from './components/loader.tsx'
 import CopyButton from './components/copyButton.tsx'
-import { DevxioLogo, FbLogo,LinkedinLogo, GmailLogo, WhatsappLogo, GithubLogo, Badge } from './svgs.tsx'
+import { DevxioLogo, LinkedinLogo, GmailLogo, WhatsappLogo, GithubLogo, Badge, ResumeLogo } from './svgs.tsx'
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import ContactForm from './components/contactus.tsx'
-
 
 export default function Home() {
-  const [loading, setLoading] = useState<boolean>(false);
   const [scrollAtTop, setScrollAtTop] = useState<boolean>(true);
+  const [showMoreProjects, setShowMoreProjects] = useState(false);
   
   // useEffect(() => {
   //   const handleLoad = () => {
@@ -48,19 +46,22 @@ export default function Home() {
   const skills = [
     "JavaScript",
     "TypeScript",
-    "React JS",
-    "Next JS",
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Express.js",
     "MongoDB",
-    "Tailwind",
-    "Node JS",
-    "Express JS",
+    "PostgreSQL",
+    "Prisma",
+    "Tailwind CSS",
     "Git",
-    "Python",
-    "SQL",
-    " ",
-    " ",
-    " ",
-    " ",
+    "GitHub",
+    "REST APIs",
+    "Auth.js / NextAuth.js",
+    "OpenAI API",
+    "Vercel",
+    "HTML",
+    "CSS",
   ];
   
   return (
@@ -80,28 +81,40 @@ export default function Home() {
         </div>
         <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 md:mt-9 w-full max-w-[1000px] mx-auto'>
           <div className='mk-shadow1 rounded-xl p-4 md:px-6 md:py-4  sm:flex'>
-            <div className='rounded-full p-3 flex items-center justify-center'>
+            {/* <div className='rounded-full p-3 flex items-center justify-center'>
               <img className='rounded-full border-[3px] border-solid border-[var(--accent1)] sm:w-[900px]' src="/assets/asadullah.webp" alt="Display Picture: Muhammad Asadullah, Full Stack Software Developer (MERN)"/>
-            </div>
+            </div> */}
             <div>
-              <div className='mt-5 mb-2 '>
-                <h1 className='mk-heading2 mr-1 inline leading-0 xsm:text-[24px]'>
+              <div className='mt-5 mb-0 '>
+                {/* <h1 className='mk-heading2 mr-1 inline leading-0 xsm:text-[24px]'>
                   Muhammad Asadullah
-                </h1>
+                </h1> */}
               </div>
-              <p className='mk-p'>
-                Greetings! <br/>
-                As a junior Full Stack Software Developer specializing in MERN stack and Next JS, 
-                I excel in crafting precise web applications. With additional know how of cloud-native technologies, coupled with a proactive learning attitude,
-                  I bring a versatile skill set and keen adaptability
-                   to create impactful and cutting-edge software solutions.
-              </p>
+                <div className="mk-p space-y-2">
+                <p>
+                  Hi, I&apos;m an aspiring web developer who learns by building.
+                </p>
+                <ul className="list-disc pl-5">
+                  <li>
+                  From AI chat apps to academic analysis tools, I&apos;ve turned my curiosity into real, working projects using modern web technologies.
+                  </li>
+                  <li>
+                  I enjoy solving problems, picking up new skills fast, and creating clean, user-focused experiences.
+                  </li>
+                  <li>
+                  My portfolio reflects a self-taught journey fueled by consistency, not shortcuts.
+                  </li>
+                </ul>
+                <p>
+                  I&apos;m excited to grow even more through real-world experience.
+                </p>
+                </div>
               <div className='mt-5 mb-2 '>
-                <a className='px-1' href='http://wa.me/923301453642' target='_blank'><WhatsappLogo/></a> 
+                <a className='px-1' href='https://wa.me/message/U7U573T4W463K1' target='_blank'><WhatsappLogo/></a> 
                 <a className='px-1' href='mailto:contact@asadullah.dev' target='_blank'><GmailLogo/></a>
                 <a className='pr-1' href='https://github.com/JoinAsadullah' target='_blank'><GithubLogo/></a>
                 <a className='px-1' href='https://www.linkedin.com/in/joinasadullah/' target='_blank'><LinkedinLogo/></a>
-                <a className='px-1' href='/cv' target='_blank'><button className='text-xl black w-[45px] h-[45px] bg-accent1 rounded-full outline-title font-bold' >CV</button></a>
+                {/* <a className='px-1' href='/cv' target='_blank'><ResumeLogo/></a> */}
               </div>
             </div>
           </div>
@@ -112,7 +125,7 @@ export default function Home() {
           </h3>
             <div className=' flex flex-wrap mk-shadow1 rounded-xl p-3 md:px-5 md:py-5 mb-3'>
               {skills.map((skill, index) => (
-                <ul key={index} className=' pb-1 mb-2 px-2 mr-1 inline border-solid border-accent2 bg-accent2 border-[2px] rounded-full my-1 grow text-center'>
+                <ul key={index} className=' pb-1 mb-2 px-2 mr-1 inline border-solid border-accent2 bg-accent2 border-[2px] rounded-full my-1 text-center'>
                   <li className='text-[12px]  font-normal inline'>
                     {skill}
                   </li>
@@ -137,10 +150,10 @@ export default function Home() {
                     </h4>
                     <div>
                       <h4 className='text-[13px] font-light inline text-[var(--accent5)]'>
-                        8th Semester
+                        Completed
                       </h4>
                       <h4 className='text-[13px] font-light text-[var(foreground)] mt-1'>
-                      Expected completion: Jan 2025
+                      Completion Year: 2025
                       </h4>
                     </div>
                   </div>
@@ -152,6 +165,30 @@ export default function Home() {
             <h3 className='font-semibold text-center text-[18px] mb-4'>
               Projects
             </h3>
+            <>
+            <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+
+              <div className='w-full aspect-[2.2] relative truncate'>
+                <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-[#DFB722] transition-colors text-background px-2 py-1 text-xs font-medium"
+                  >
+                    Latest
+                  </div>
+                </div>
+                <img src='/assets/screenshot2.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken' />
+              </div>
+              <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+                <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                  QAS - Quantification and Analysis System <br/>
+                  Next.js, Vercel, Postgres, Tailwind
+                </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/fyp' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://qas.asadullah.dev/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
             <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
 
               <div className='w-full aspect-[2.2] relative truncate'>
@@ -174,159 +211,171 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
+            <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+
+              <div className='w-full aspect-[2.2] relative truncate'>
                 <div className="absolute top-4 right-4 z-10">
+                  <div
+                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-[#DFB722] transition-colors text-background px-2 py-1 text-xs font-medium"
+                  >
+                    Latest
+                  </div>
+                </div>
+                <img src='/assets/screenshot33.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken' />
+              </div>
+              <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+                <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                  Agri Advice | Next.js, Vercel, OpenWeatherAPI, Postgres, Tailwind
+                </p>
+              <div className='flex justify-center items-center pic-invert'>
+                <a href='https://github.com/JoinAsadullah/crop-recommendation' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                <a href='https://crop-recommendation-smoky.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+              </div>
+            </div>
+          </div>
+
+          </>
+            {/* See More Projects Button & Collapsible Projects List */}
+            <div>
+            {showMoreProjects && (
+              <>
+              <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+                <div className='w-full aspect-[2.2] relative truncate
+                '>
+                  <div className="absolute top-4 right-4 z-10">
                   <div
                     className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
 
                   >
                     Jan 2024
                   </div>
+                  </div>
+                <img src='/assets/financial-dashboard.png' alt='next js financial dashboard website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
                 </div>
-              <img src='/assets/financial-dashboard.png' alt='next js financial dashboard website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Next JS financial dashboard | Next.js 14
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/financial-dashboard-learn-nextjs' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://financial-dashboard-learn-nextjs.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+                <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+                <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                  Next JS financial dashboard | Next.js 14
+                </p>
+                <div className='flex justify-center items-center pic-invert'>
+                  <a href='https://github.com/JoinAsadullah/financial-dashboard-learn-nextjs' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                  <a href='https://financial-dashboard-learn-nextjs.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+                </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-                <div className="absolute top-4 right-4 z-10">
+              <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+                <div className='w-full aspect-[2.2] relative truncate
+                '>
+                  <div className="absolute top-4 right-4 z-10">
                   <div
                     className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
 
                   >
                     Dec 2023
                   </div>
-                </div>
-              <img src='/assets/budget-app.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                React budget app | Create react app
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/ejtos-react_budget_app' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://ejtos-react-budget-app-three.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-              <img src='/assets/current.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Portfolio Website NextJS Current
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/portfolio-web' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='/'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
-              </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-                <div className="absolute top-4 right-4 z-10">
-                  <div
-                    className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
-                  >
-                    Mar 2023
                   </div>
+                <img src='/assets/budget-app.png' alt='react budget website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
                 </div>
-              <img src='/assets/earth.png' alt='3d earth website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Earth 3D
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/my-portfolio' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://my-portfolio-dsev.vercel.app/earth' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+                <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+                <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                  React budget app | Create react app
+                </p>
+                <div className='flex justify-center items-center pic-invert'>
+                  <a href='https://github.com/JoinAsadullah/ejtos-react_budget_app' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                  <a href='https://ejtos-react-budget-app-three.vercel.app/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+                </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-                <div className="absolute top-4 right-4 z-10">
+              <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+                <div className='w-full aspect-[2.2] relative truncate
+                '>
+                  <div className="absolute top-4 right-4 z-10">
                   <div
                     className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
 
                   >
                     Aug 2022
                   </div>
+                  </div>
+                <img src='/assets/fa.webp' alt='focus academy website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
                 </div>
-              <img src='/assets/fa.webp' alt='focus academy website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Focus Academy Website
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/focusacademy' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://joinasadullah.github.io/focusacademy/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+                <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+                <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                  Focus Academy Website
+                </p>
+                <div className='flex justify-center items-center pic-invert'>
+                  <a href='https://github.com/JoinAsadullah/focusacademy' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                  <a href='https://joinasadullah.github.io/focusacademy/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+                </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-                <div className="absolute top-4 right-4 z-10">
+              <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+                <div className='w-full aspect-[2.2] relative truncate
+                '>
+                  <div className="absolute top-4 right-4 z-10">
                   <div
                     className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
 
                   >
                     Jul 2022
                   </div>
+                  </div>
+                <img src='/assets/bk.webp' alt='Client website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
                 </div>
-              <img src='/assets/bk.webp' alt='Client website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Client Website HTML CSS JS
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/bika' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://joinasadullah.github.io/bika/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+                <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+                <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                  Client Website HTML CSS JS
+                </p>
+                <div className='flex justify-center items-center pic-invert'>
+                  <a href='https://github.com/JoinAsadullah/bika' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                  <a href='https://joinasadullah.github.io/bika/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+                </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
-            <div className='w-full aspect-[2.2] relative truncate
-            '>
-                <div className="absolute top-4 right-4 z-10">
+              <div className=' flex flex-wrap mk-shadow1 rounded-xl mb-3'>
+                <div className='w-full aspect-[2.2] relative truncate
+                '>
+                  <div className="absolute top-4 right-4 z-10">
                   <div
                     className="inline-flex w-fit items-center whitespace-nowrap rounded-md bg-foreground transition-colors text-background px-2 py-1 text-xs font-medium"
 
                   >
                     Jul 2022
                   </div>
+                  </div>
+                <img src='/assets/template-web.png' alt='template website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
                 </div>
-              <img src='/assets/template-web.png' alt='template website screenshot' className='absolute top-0 w-full top-bdr p-[10px] object-cover top-0 -dark:drken'/>
-            </div>
-            <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
-              <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
-                Design to HTML CSS JS
-              </p>
-              <div className='flex justify-center items-center pic-invert'>
-                <a href='https://github.com/JoinAsadullah/templateweb' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
-                <a href='https://joinasadullah.github.io/templateweb/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+                <div className=' bottom-bdr bg-accent2 py-2 w-full m-[10px] mt-0'>
+                <p className='w-full mx-[auto] text-v1 text-center p-4 p-[10px]'>
+                  Design to HTML CSS JS
+                </p>
+                <div className='flex justify-center items-center pic-invert'>
+                  <a href='https://github.com/JoinAsadullah/templateweb' target='_blank'><img src='/assets/github.webp' alt='github repo' className='h-[30px] m-3'/></a>
+                  <a href='https://joinasadullah.github.io/templateweb/' target='_blank'><img src='/assets/rd.webp' alt='redirect url' className='h-[30px] m-3'/></a>
+                </div>
+                </div>
               </div>
+              </>
+            )}
             </div>
           </div>
-        </div>
+            <button
+            className="mx-auto flex items-center gap-2 mb-4 px-4 py-2 bg-transparent text-accent7 font-semibold hover:bg-accent2 hover:border-accent4 transition group"
+            onClick={() => setShowMoreProjects((prev) => !prev)}
+            aria-expanded={showMoreProjects}
+            >
+            <span>
+              {showMoreProjects ? "See Less Projects" : "See More Projects"}
+            </span>
+            <svg
+              className={`w-4 h-4 transition-transform duration-200 ${showMoreProjects ? "rotate-180" : ""}`}
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+            </button>
         <div className='px-5 xsm:px-6 sm:px-7 md:px-9 mt-8 w-full max-w-[1000px] mx-auto'>
           <h3 className='font-semibold text-center text-[18px] mb-4'>
             Certifications
@@ -378,29 +427,7 @@ export default function Home() {
               </a>
             </div>  
             <div className='h-[1px] border-solid border-[var(--accent2)] border-[1px]' />
-            <div className='mt-6 mb-6'>
-              <a href='https://www.credly.com/badges/75c9da11-365e-4be8-b993-5ec9b5e2370e/public_url' target='_blank' className='flex'>
-                  <div className='flex items-center '>
-                      <Image className='w-[100px]' src="/assets/design-thinking.png" alt="IBM Design thinking practitioner Badge" width={200} height={200} />
-                  </div>
-                  <div className='ml-2'>
-                    <h4 className='text-[16px] font-semibold leading-tight mb-1'>
-                      IBM Design Thinking Practitioner
-                    </h4>
-                    <div>
-                      <Image className='inline mb-[2px] mr-[2px] ' src="/assets/check-verified-02.png" alt="" width={15} height={15} />
-                      <h4 className='text-[13px] font-light inline text-[var(--accent5)]'>
-                        Click to verify
-                      </h4>
-                      <h4 className='text-[13px] font-light text-[var(foreground)] mt-1'>
-                      Provider: coursera<br/>
-                      Issued: August 2023
-                      </h4>
-                    </div>
-                  </div>
-              </a>
-            </div>
-            <div className='h-[1px] border-solid border-[var(--accent2)] border-[1px]' />
+            
             <div className='mt-6 mb-6'>
               <a href='https://www.credly.com/badges/24114c57-01c8-4c8f-a192-6e43171e6d14/public_url' target='_blank' className='flex'>
                   <div className='flex items-center '>
@@ -458,9 +485,6 @@ export default function Home() {
               <div className=''>
                 <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
                   <a className='truncate basis-4/5' href='mailto:asadullah@devxio.com' target='_blank'><p className=''>Email<br/><span className='hover:underline text-accent4 px-1 rounded-md'>contact@asadullah.dev</span></p></a><CopyButton textToCopy="contact@asadullah.dev"/>
-                </div>
-                <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
-                  <a className='truncate basis-4/5' href='http://wa.me/923301453642' target='_blank'><p className=''>WhatsApp<br/><span className='hover:underline text-accent4 px-1 rounded-md'>+92 330 1453642</span></p></a><CopyButton textToCopy="+923301453642"/>
                 </div>
                 <div className='flex justify-between mk-shadow1 rounded-xl p-4 md:px-6 md:py-5 mb-3'>
                   <a className='truncate basis-4/5' href='https://www.linkedin.com/in/joinasadullah/' target='_blank'><p className=''>LinkedIn<br/><span className='hover:underline text-accent4 px-1 rounded-md'>linkedin.com/in/joinasadullah</span></p></a><CopyButton textToCopy="https://www.linkedin.com/in/joinasadullah/"/>
